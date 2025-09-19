@@ -61,10 +61,10 @@ byteblog-backend/
 
 📦 Deployment(later)
 
-Works with Render
--  Railway
+Works with (future)
+-  Render
 - MongoDB Atlas for cloud database
 
 👨‍💻 Author
 
-Adegoke Surajudeen — 
+Adegoke Surajudeen 
