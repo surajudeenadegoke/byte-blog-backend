@@ -2,9 +2,8 @@ const User = require("../models/User");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
-
 // REGISTER a new user
-exports.register = async (req, res) => {
+const registerUser = async (req, res) => {
   const { username, email, password } = req.body;
   try {
     // Check if the username already exists
@@ -24,7 +23,7 @@ exports.register = async (req, res) => {
 };
 
 // LOGIN an existing user
-exports.login = async (req, res) => {
+loginUser = async (req, res) => {
   const { username, password } = req.body;
   try {
     // Find the user by email
@@ -52,3 +51,5 @@ exports.login = async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 };
+
+module.exports = { loginUser, registerUser };

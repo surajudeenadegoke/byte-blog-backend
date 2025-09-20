@@ -1,5 +1,4 @@
 const Post = require("../models/Post");
-const User = require("../models/User");
 
 // CREATE a new post
 const createPost = async (req, res) => {
@@ -94,4 +93,5 @@ module.exports = {
   getPosts,
   getPostById,
   updatePost,
+  deletePost
 };
