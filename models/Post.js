@@ -17,12 +17,12 @@ const postSchema = new mongoose.Schema(
       required: true,
     },
     tags: [String],
-    likes: [
+    /* likes: [
         { 
             type: mongoose.Schema.Types.ObjectId, 
             ref: "User" 
         }
-    ], // track users who liked
+    ], */ // track users who liked
   },
   { timestamps: true }
 );
